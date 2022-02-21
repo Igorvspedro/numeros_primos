@@ -9,9 +9,21 @@ function primo() {
             divisores++;
 
     if (divisores == 2)
-        alert('É primo');
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'O número é primo',
+            showConfirmButton: false,
+            timer: 1500
+        })
     else {
-        alert('Não é primo')
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'O número não é primo',
+            showConfirmButton: false,
+            timer: 1500
+        })
     }
 
 }
