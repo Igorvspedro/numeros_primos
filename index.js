@@ -3,6 +3,7 @@ function primo() {
     const resposta = document.querySelector('#resposta');
     var divisores = 0;
     const formataNumero = parseInt(numero.value);
+    const tempo = 3000;
 
     for (var count = 1; count <= formataNumero; count++)
         if (formataNumero % count == 0)
@@ -14,7 +15,7 @@ function primo() {
             icon: 'success',
             title: 'O número é primo',
             showConfirmButton: false,
-            timer: 3000
+            timer : tempo
         });
     else {
         Swal.fire({
@@ -22,7 +23,7 @@ function primo() {
             icon: 'error',
             title: 'O número não é primo',
             showConfirmButton: false,
-            timer: 3000
+            timer: tempo
         });
     }
 
